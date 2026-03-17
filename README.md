@@ -67,33 +67,33 @@ ollama run phi3
 This project follows a client-server architecture.
 ### Components
 1. Ollama Server
--Runs locally on http://localhost:11434
--Hosts the Phi-3 model
--Processes prompts
+- Runs locally on http://localhost:11434
+- Hosts the Phi-3 model
+- Processes prompts
 2. LangChain (ChatOllama)
--Sends HTTP requests to Ollama
--Receives responses
--Formats output
+- Sends HTTP requests to Ollama
+- Receives responses
+- Formats output
 3. Agent (create_agent)
--Manages conversation flow
--Can be extended with tools
+- Manages conversation flow
+- Can be extended with tools
 
 ## Flow
 User Input
-↓
+→
 LangChain Agent
-↓
+→
 ChatOllama
-↓
+→
 Ollama Server (localhost:11434)
-↓
+→
 Phi-3 Model
-↓
+→
 Response → User
 
 ## Key Learnings
--Difference between local models and API-based models
--Understanding client-server architecture
--How LangChain interacts with LLM backends
--How Ollama exposes a local REST API
--Building a basic AI agent loop
+- Difference between local models and API-based models
+- Understanding client-server architecture
+- How LangChain interacts with LLM backends
+- How Ollama exposes a local REST API
+- Building a basic AI agent loop
